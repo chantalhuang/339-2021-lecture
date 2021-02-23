@@ -1,31 +1,64 @@
-/* This is some default styling for the exercise */
 body{
-	font-family:helvetica, arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
+h1{
+    font-size: 3rem;
+}
 
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+
+p, ul, ol{
+    font-size: 1rem;
+}
+
+/* 45-75 characters per line */
+p{
+    /* width: 60%; */
+    /* max-width: 75ch; */
+    width: clamp(45ch, 70%, 75ch);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration-color: sienna;
+    text-decoration-thickness: 0.25rem;
+}
+
+nav a{
+    display: inline-block;
+    color: white;
+    background-color: rgb(200, 50, 50);
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 0.25em 0.45em;
+}
+
+nav a:hover, nav a:focus{
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+.wrapper{
+    width: clamp(16rem, 90vw, 75rem);
+    padding: 1em;
+    background-color: white;
+    margin: auto;
+
+    margin: 0 auto;
+}
 
 header{
-	background:rgb(190, 190, 190);
-}
-
-.main{
-	background:rgb(150,150,150);
-}
-
-.sidebar{
-	background:rgb(210,210,210);
-}
-
-.card-row-container{
-	background:rgb(175,175,175);
-}
-
-.product-card{
-	background:rgb(225,225,225);
-
-}
-
-footer{
-	background:rgb(150,150,150);
+    background-color: #ccc;
 }
