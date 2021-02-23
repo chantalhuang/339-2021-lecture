@@ -1,0 +1,5 @@
+#initial ignore file that nukes .DS_Store
+
+.DS_Store
+
+
